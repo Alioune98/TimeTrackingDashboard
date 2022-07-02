@@ -1,109 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <title>Frontend Mentor | Time tracking dashboard</title>
+  <title>Time tracking dashboard</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
   <div class="main">
-    <div class="user">
-      <img src="images/image-jeremy.png" alt="">
-      <h1>Report for</h1>
-      <h2>Jeremy Robson</h2>
-      <h3>Daily</h3>
-      <h3>Weekly</h3>
-      <h3>Monthly</h3>
+    <div class="user grid-item">
+      <section class="user-info">
+        <div class="image">
+          <img class="profile-img" src="images/image-jeremy.png" alt="">
+        </div>
+        <div class="user-card">
+          <h2>Report for</h2>
+          <h3>Jeremy Robson</h3>
+        </div>
+      </section>
+      <section class="periods">
+        <h1>Daily</h1>
+        <h1>Weekly</h1>
+        <h1>Monthly</h1>
+      </section>
     </div>
-    <div class="work">
-      <h1>Work</h1>
 
-      <h2>5hrs <!-- daily --></h2>
-      <h3>Previous - 7hrs <!-- daily --></h3>
-
-      <h2>32hrs <!-- weekly --></h2>
-      <h3>Previous - 36hrs <!-- weekly --></h3>
-
-      <h2>103hrs <!-- monthly --></h2>
-      <h3>Previous - 128hrs <!-- monthly --></h3>
+    <div class="work grid-item activity-card">
+      <section class="period-data">
+        <div class="content">
+          <h1>Work</h1>
+          <img class="justify-end"src="images/icon-ellipsis.svg" alt="">
+          <h3>5hrs
+            <!-- daily -->
+          </h3>
+          <h2 class="justify-end">Previous - 7hrs
+            <!-- daily -->
+          </h2>
+        </div>
+      </section>
     </div>
-    <div class="play">
-      <h1>Play</h1>
 
-      <h2>1hr <!-- daily --></h2>
-      <h3>Previous - 2hrs <!-- daily --></h3>
-
-      <h2>10hrs <!-- weekly --></h2>
-      <h3>Previous - 8hrs <!-- weekly --></h3>
-
-      <h2>23hrs <!-- monthly --></h2>
-      <h3>Previous - 29hrs <!-- monthly --></h3>
+    <div class="play grid-item activity-card">
+      <section class="period-data">
+        <div class="content">
+          <h1>Play</h1>
+          <img class="justify-end" src="images/icon-ellipsis.svg" alt="">
+          <h3>1hr
+            <!-- daily -->
+          </h3>
+          <h2 class="justify-end">Previous - 2hrs
+          </h2>
+        </div>
+      </section>
     </div>
-    <div class="study">
-      <h1>Study</h1>
 
-      <h2>0hrs <!-- daily --></h2>
-      <h3>Previous - 1hr <!-- daily --></h3>
-
-      <h2>4hrs <!-- weekly --></h2>
-      <h3>Previous - 7hrs <!-- weekly --></h3>
-
-      <h2>13hrs <!-- monthly --></h2>
-      <h3>Previous - 19hrs <!-- monthly --></h3>
-
+    <div class="study grid-item activity-card">
+      <section class="period-data">
+        <div class="content">
+          <h1>Study</h1>
+          <img class="justify-end" src="images/icon-ellipsis.svg" alt="">
+          <h3>0hrs
+            <!-- daily -->
+          </h3>
+          <h2 class="justify-end">Previous - 1hr
+            <!-- daily -->
+          </h2>
+        </div>
+      </section>
     </div>
-    <div class="exercise">
-      <h1>Exercise</h1>
 
-      <h2>1hr <!-- daily --></h2>
-      <h3>Previous - 1hr <!-- daily --></h3>
-
-      <h2>4hrs <!-- weekly --></h2>
-      <h3>Previous - 5hrs <!-- weekly --></h3>
-
-      <h2>11hrs <!-- monthly --></h2>
-      <h3>Previous - 18hrs <!-- monthly --></h3>
-
+    <div class="exercise grid-item activity-card">
+      <section class="period-data">
+        <div class="content">
+          <h1>Exercise</h1>
+          <img class="justify-end" src="images/icon-ellipsis.svg" alt="">
+          <h3>1hr
+            <!-- daily -->
+          </h3>
+          <h2 class="justify-end" >Previous - 1hr
+            <!-- daily -->
+          </h2>
+        </div>
+      </section>
     </div>
-    <div class="social">
-      <h1>Social</h1>
 
-      <h2>1hr <!-- daily --></h2>
-      <h3>Previous - 3hrs <!-- daily --></h3>
-
-      <h2>5hrs <!-- weekly --></h2>
-      <h3>Previous - 10hrs <!-- weekly --></h3>
-
-      <h2>21hrs <!-- monthly --></h2>
-      <h3>Previous - 23hrs <!-- monthly --></h3>
-
+    <div class="social grid-item activity-card">
+      <section class="period-data">
+        <div class="content">
+          <h1>Social</h1>
+          <img class="justify-end" src="images/icon-ellipsis.svg" alt="">
+          <h3>1hr
+            <!-- daily -->
+          </h3>
+          <h2 class="justify-end" >Previous - 3hrs
+            <!-- daily -->
+          </h2>
+        </div>
+      </section>
     </div>
-    <div class="self-care">
-      <h1>Self Care</h1>
 
-      <h2>0hrs <!-- daily --></h2>
-      <h3>Previous - 1hr <!-- daily --></h3>
-
-      <h2>2hrs <!-- weekly --></h2>
-      <h3>Previous - 2hrs <!-- weekly --></h3>
-
-      <h2>7hrs <!-- monthly --></h2>
-      <h3>Previous - 11hrs <!-- monthly --></h3>
+    <div class="self-care grid-item activity-card">
+      <section class="period-data">
+        <div class="content">
+          <h1>Self Care</h1>
+          <img class="justify-end" src="images/icon-ellipsis.svg" alt="">
+          <h3>0hrs
+            <!-- daily -->
+          </h3>
+          <h2 class="justify-end" >Previous - 1hr
+            <!-- daily -->
+          </h2>
+        </div>
+      </section>
     </div>
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
-  <script src="http://localhost:52322/livereload.js" charset="utf-8"></script>
+  <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
 </body>
 </html>

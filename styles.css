@@ -1,6 +1,144 @@
-/* .grid-container{
+body{
+  background-color: hsl(226, 43%, 10%);
+  font-family: 'Rubik', sans-serif;
+  color: hsl(236, 100%, 87%);
+  margin: 0;
+}
+h1{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+h2{
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+}
+h3{
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+}
+.main{
+  margin-top: 80px;
   display: grid;
-  grid-template-columns: 200px 250px;
-  grid-auto-rows: minmax(150px, auto);
-  grid-gap: 20px;
-} */
+  row-gap: 25px;
+}
+.grid-item{
+  width: 86%;
+  margin: auto;
+  border-radius: 15px;
+}
+.activity-card{
+  color: hsl(236, 100%, 87%);
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 18px;
+  background-repeat: no-repeat;
+  background-position: top -10px right 12px;
+}
+.image{
+  width: 70px;
+  height: 70px;
+  border: solid 3px white;
+  border-radius: 50%;
+}
+
+.profile-img{
+  width: 100%;
+  margin: auto;
+}
+.user{
+  background-color: hsl(235, 46%, 20%);
+}
+.user-card{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 0;
+}
+.user-card h3{
+  margin-top: 5px;
+  font-size: 23px;
+}
+.user-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: hsl(246, 80%, 60%);
+  padding: 1.6rem;
+}
+
+.periods{
+  color: hsl(235, 45%, 61%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 1.2rem;
+}
+
+.period-data{
+  display: flex;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  width: 100%;
+  height: 75%;
+}
+
+.content{
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5px;
+  justify-items: start;
+  align-items: center;
+}
+
+.justify-end{
+  justify-self: end;
+}
+
+.work{
+  background-image: url("images/icon-work.svg");
+  background-color: hsl(15, 100%, 70%);
+}
+
+.play{
+  background-image: url("images/icon-play.svg");
+  background-color: hsl(195, 74%, 62%);
+}
+
+.study{
+  background-image: url("images/icon-study.svg");
+  background-color: hsl(348, 100%, 68%);
+}
+
+.exercise{
+  background-image: url("images/icon-exercise.svg");
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social{
+  background-image: url("images/icon-social.svg");
+  background-color: hsl(264, 64%, 52%);
+}
+
+.self-care{
+  background-image: url("images/icon-self-care.svg");
+  background-color: hsl(43, 84%, 65%);
+}
+
+@media (min-width: 600px) {
+  .main{
+    margin-top: 80px;
+    display: grid;
+    row-gap: 25px;
+  }
+}
